@@ -1,4 +1,11 @@
 /* all */
+:root {
+    --main-color: #0f4557;
+    --second-color: #da2400;
+    --third-color: #c98e35;
+    --Fourth-color: #f6f0d7
+}
+
 * {
     padding: 0 0 0 0;
     margin: 0;
@@ -6,13 +13,14 @@
     font-family: "Pixelify Sans", sans-serif;
 }
 
-html {
+E html {
     scroll-behavior: smooth;
 }
 
 main,
 body {
-    background-color: rgb(252, 252, 252);
+    background-image: url("/website/img/bg_texture_cave.jpg");
+    background-repeat: repeat;
 }
 
 p {
@@ -28,21 +36,24 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: 0.6s;
+    transition: 0.7s;
     padding: 40px 0px;
     z-index: 100000;
+    background-image: url(/website/img/bg\ keraton.png);
+
 }
 
 nav.sticky {
     padding: 20px 0px;
     background: rgb(30, 30, 30);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
 
 nav .logo {
     position: relative;
     font-weight: 700;
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
@@ -51,7 +62,7 @@ nav .logo {
 }
 
 .logo span {
-    color: rgb(219, 84, 75);
+    color: var(--second-color);
     font-family: "Pixelify Sans", sans-serif;
 }
 
@@ -71,7 +82,7 @@ nav ul li a {
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.5s;
@@ -139,6 +150,9 @@ ul {
     text-transform: capitalize;
     color: rgba(30, 30, 30, 0.911);
     margin-left: 30px;
+    background-color: #ffffff;
+    padding: 2rem;
+
 }
 
 .j-text img {
@@ -172,7 +186,7 @@ ul {
 
 .j-btn {
     display: inline-block;
-    background: #ff3030;
+    background: var(--second-color);
     color: #fff;
     padding: 16px 40px;
     margin: 20px 0px;
@@ -182,14 +196,15 @@ ul {
 }
 
 .j-btn:hover {
-    border: 2px solid#ff3030;
-    color: #ff3030;
+    border: 2px solidvar(--second-color);
+    color: var(--second-color);
     background-color: transparent;
 
 }
 
 .jumbotron {
-    background-color: rgb(252, 252, 252);
+    background-image: url("/website/img/bg\ keraton.png");
+    background-repeat: no-repeat;
     margin: 0px 0px 25px 0px;
     padding-bottom: 100px;
     padding-top: 200px;
@@ -217,6 +232,8 @@ ul {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border-color: var(--Fourth-color);
+    border: 2px solid white;
 }
 
 .sell-container {
@@ -239,6 +256,7 @@ ul {
     align-items: center;
     font-size: 50px;
     margin: 50px 0px;
+    color: white;
 }
 
 /* discount */
@@ -280,14 +298,14 @@ ul {
 .dc-text p {
     font-size: 16px;
     line-height: 25px;
-    color: whitesmoke;
+    color: white;
     padding-bottom: 15px;
 }
 
 .dc-btn {
     display: inline-block;
-    background: #ff3030;
-    color: #fff;
+    background: var(--second-color);
+    color: #ffffff;
     padding: 16px 40px;
     margin: 20px 0px;
     border-radius: 5px;
@@ -296,8 +314,8 @@ ul {
 }
 
 .dc-btn:hover {
-    border: 2px solid#ff3030;
-    color: #ff3030;
+    border: 2px solidvar(--second-color);
+    color: var(--second-color);
     background-color: transparent;
 }
 
@@ -317,7 +335,7 @@ ul {
     margin: 20px 0px;
     /* margin-bottom: 15px; */
     font-size: 50px;
-    color: rgb(50, 50, 50)
+    color: white
 }
 
 .featured-container {
@@ -327,6 +345,7 @@ ul {
     /* margin-top: 10px; */
     flex-wrap: wrap;
     gap: 10px;
+
 }
 
 .featured-item {
@@ -334,9 +353,10 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(43, 43, 43); */
     border-radius: 5px;
+    border: 2px solid white;
     padding: 10px;
+
 }
 
 
@@ -346,6 +366,7 @@ ul {
     justify-content: center;
     flex-direction: column;
     margin: 10px 0px;
+
 }
 
 .container-text-featured {
@@ -353,20 +374,22 @@ ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: white;
+
 
 }
 
 .container-text-featured h4 {
     margin: 5px;
     text-transform: capitalize;
-    color: rgb(50, 50, 50);
+    color: white;
     font-size: 20px;
 }
 
 .container-text-featured p {
     margin: 5px;
     text-transform: capitalize;
-    color: rgb(50, 50, 50);
+    color: white;
     font-size: 18px;
 }
 
@@ -386,7 +409,7 @@ ul {
     margin: 20px 0px;
     /* margin-bottom: 15px; */
     font-size: 50px;
-    color: rgb(50, 50, 50);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -450,12 +473,12 @@ ul {
     font-size: 30px;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    color: rgb(50, 50, 50);
+    color: white;
 }
 
 .price-pr {
     font-size: 38px;
-    color: rgb(50, 50, 50);
+    color: white;
 }
 
 .list {
@@ -466,7 +489,7 @@ ul {
 
 .list li {
     margin-top: 20px;
-    color: rgb(50, 50, 50);
+    color: white;
 }
 
 hr {
@@ -481,7 +504,7 @@ hr {
 
 .price-button {
     display: inline-block;
-    background: #ff3030;
+    background: var(--second-color);
     color: #fff;
     padding: 16px 40px;
     margin: 20px 0px;
@@ -492,8 +515,8 @@ hr {
 }
 
 .price-button:hover {
-    border: 2px solid#ff3030;
-    color: #ff3030;
+    border: 2px solidvar(--second-color);
+    color: var(--second-color);
     background-color: transparent;
     transform: matrix(translate(0px, 3px))
 }
@@ -600,7 +623,7 @@ img.about-us {
 
 .btn-about {
     display: inline-block;
-    background: #ff3030;
+    background: var(--second-color);
     color: #fff;
     padding: 16px 40px;
     margin: 20px 0px;
@@ -610,8 +633,8 @@ img.about-us {
 }
 
 .btn-about:hover {
-    border: 2px solid#ff3030;
-    color: #ff3030;
+    border: 2px solidvar(--second-color);
+    color: var(--second-color);
     background-color: transparent;
     transform: matrix(translate(0px, 3px))
 }
@@ -646,7 +669,7 @@ img.about-us {
 .footer {
     font-size: 14px;
     padding: 40px 0px 0px 40px;
-    color: rgb(50, 50, 50);
+    color: white;
     background-color: rgb(250, 250, 250)
 }
 
@@ -757,7 +780,7 @@ tbox:focus {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    background-image: url(/website/img/cave_keraton.png);
     padding: 20px 0px
 }
 
