@@ -39,7 +39,7 @@ nav {
     transition: 0.7s;
     padding: 40px 0px;
     z-index: 100000;
-    background-image: url(/website/img/bg\ keraton.png);
+    background-image: black;
 
 }
 
@@ -191,10 +191,12 @@ ul {
     text-transform: capitalize;
     color: rgba(30, 30, 30, 0.911);
     margin-left: 30px;
-    /* background-color: #ffffff; */
+    text-align: center;
     padding: 2rem;
+}
 
-
+.j-text img {
+    background-color: none;
 }
 
 @media screen and (max-width:320px) {
@@ -221,19 +223,22 @@ ul {
 }
 
 .j-text h2 {
-    font-size: 40px;
+    font-size: 100px;
     line-height: 7 0px;
     margin: 10px 0px;
     text-decoration: none !important;
+    color: white
 }
 
 .j-text h3 {
     font-size: 40px;
+    color: white
 }
 
 .j-text h3 span {
     font-size: 40px;
     text-decoration: line-through;
+    color: white
 }
 
 .j-text p {
@@ -241,7 +246,7 @@ ul {
     line-height: 40px;
     padding-bottom: 5px;
     text-align: justify;
-    color: rgba(30, 30, 30)
+    color: white
 }
 
 .j-btn {
@@ -264,9 +269,11 @@ ul {
 
 .jumbotron {
     background-image: url("/website/img/bg\ keraton.png");
+    background-size: 2100px;
     background-repeat: no-repeat;
     margin: 0px 0px 25px 0px;
     padding-top: 200px;
+    /* margin-bottom: 200px; */
 }
 
 .j-img {
